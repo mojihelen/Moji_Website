@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Anthony Anjorin's Website</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="lib/simple-line-icons/css/simple-line-icons.css">
+    <link rel="stylesheet" href="lib/device-mockups/device-mockups.min.css">
+
+    <!-- Theme CSS -->
+    <link href="css/new-age.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top">
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll"
+        href="#page-top">Anthony Anjorin</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+		    <li>
+                        <a class="page-scroll" href="#research">Research</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#profile">Profile</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#teaching">Teaching</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#service">Service</a>
+                    </li>
+		    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="header-content">
+                        <div class="header-content-inner">
+			  <h2>
+			  My name is Tony Anjorin, and I'm currently a junior professor for
+			  model-based software development at the
+			  computer science department of Paderborn University, Germany.
+			  </h2>
+                            <a href="#research" class="btn btn-outline
+        btn-xl page-scroll">My Research Interests</a>
+			  <br />
+			  <br />
+			  <a href="#contact" class="btn btn-outline
+		  btn-xl page-scroll">Find Me / My Publications</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="device-container">
+		      <img src="img/portrait.png" class="img-responsive" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="research" class="download bg-primary text-left">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <h3>Vision</h3>
+		  <p>
+		  I'm a software engineer with a particular interest in <i>language-oriented</i> software development.
+		  The vision for software engineering that I share with many other researchers is to one day reach a point where it becomes so easy to develop small, focused <i>Domain-Specific Languages (DSLs)</i>, that the average programmer will regard this as the normal thing to do; given a problem to solve, develop a suitable language in which you can <i>model</i> precisely what you want in your problem domain, then develop a <i>model transformation</i> to map this solution idea to a chosen solution domain.
+		  </p>
+		  
+		  <h3>Specialisation</h3>
+		  <p>
+		  The research field of <i>model-driven engineering</i> is all about realising this vision, and I've specialised and focused on model transformations in general, and <i>(model) consistency management</i> in particular.
+		  Consistency management encompasses a means of <i>specifying consistency</i> over models, and being able to: <i>generate</i> consistent models, <i>check</i> if a set of given models are consistent, and <i>restore</i> consistency for a given set of possibly inconsistent models.
+		  The community currently working on all aspects of consistency management refers to the area as <i>bidirectional transformations (bx)</i>.
+		  
+		  The reason I'm particularly interested in <i>bx</i> is that I can only really advocate the proliferation of numerous DSLs (and thus models in these DSLs), if we can <i>guarantee</i> that consistency can be restored and maintained as required in an efficient and effective manner.
+		  
+		  My favourite hammer for working on <i>bx</i> has been and is still <i>graph transformations</i> (which is also just basic category theory).
+		  A particularly simple flavour of graph transformations can be expressed using <i>Triple Graph Grammars (TGGs)</i>, and I've spent a good time of my life as an active researcher thinking about and extending the TGG formalism.
+</p>
+
+<h3>Contribution</h3>
+<p>
+I strive hard to be a balanced researcher, and I have made contributions towards developing the <i>formal</i> theory of TGGs (
+		  <a href="http://link.springer.com/chapter/10.1007/978-3-642-33654-6_24">
+		  <i class="fa fa-file-text-o" aria-hidden="true"></i></a>,
+		  <a href="http://link.springer.com/chapter/10.1007/978-3-319-09108-2_9">
+		  <i class="fa fa-file-text-o" aria-hidden="true"></i></a>,
+		  <a href="http://link.springer.com/chapter/10.1007/978-3-662-54494-5_11">
+		  <i class="fa fa-file-text-o" aria-hidden="true"></i></a>,
+                  <a href="http://www.sciencedirect.com/science/article/pii/S1045926X15300604">
+		  <i class="fa fa-file-text-o" aria-hidden="true"></i></a>
+)
+, as well as embodying this theory in <i>practical</i> tools you can trust and actually (want to) use (
+		  <a href="http://link.springer.com/chapter/10.1007/978-3-319-08789-4_10">
+		  <i class="fa fa-file-text-o" aria-hidden="true"></i></a>,
+                  <a href="http://link.springer.com/chapter/10.1007/978-3-319-40530-8_12">
+		  <i class="fa fa-file-text-o" aria-hidden="true"></i></a>
+). 
+I also try to be as <i>methodic</i> as possible, and have contributed to <i>systematically comparing</i> the diverse approaches to <i>bx</i> (
+		  <a href="https://journal.ub.tu-berlin.de/eceasst/article/view/865">
+		  <i class="fa fa-file-text-o" aria-hidden="true"></i></a>,
+		  <a href="https://journal.ub.tu-berlin.de/eceasst/article/view/939">
+		  <i class="fa fa-file-text-o" aria-hidden="true"></i></a>,
+		  <a href="http://ceur-ws.org/Vol-1133/paper-13.pdf">
+		  <i class="fa fa-file-text-o" aria-hidden="true"></i></a>,
+                  <a href="http://ceur-ws.org/Vol-1827/paper6.pdf">
+		  <i class="fa fa-file-text-o" aria-hidden="true"></i></a>
+
+), as well as developing techniques towards the reproducible <i>engineering</i> of quality <i>bx</i> solutions (
+		  <a href="http://ceur-ws.org/Vol-1396/bx2015.pdf#page=85">
+		  <i class="fa fa-file-text-o" aria-hidden="true"></i></a>,
+		  <a href="http://link.springer.com/chapter/10.1007/978-3-642-54804-8_24">
+		  <i class="fa fa-file-text-o" aria-hidden="true"></i></a>,
+		  <a href="http://link.springer.com/chapter/10.1007/978-3-642-36089-3_8">
+		  <i class="fa fa-file-text-o" aria-hidden="true"></i></a>
+).  Please refer to my <a href="#contact" class="page-scroll">Google Scholar profile</a> for a complete and up to date list of publications.
+		  </p>
+
+<h3>Research Projects</h3>
+<p>
+
+<ul>
+  <li>
+  <h4><a href="http://www.softwarecampus.de/aktuelles/forschungsprojekte/projekt/cme-concurrent-manufacturing-engineering/"> Concurrent Manufacturing Engineering (CME)</a></h4>
+  This was a case study for model synchronisation in the context of manufacturing engineering.
+  Refer to my PhD thesis
+  (
+  <a href="http://tuprints.ulb.tu-darmstadt.de/4399/">
+  <i class="fa fa-file-text-o" aria-hidden="true"></i></a>
+  )
+  for a detailed overview.  This <a href="https://www.youtube.com/watch?v=BKdw67zrjOw"> screencast</a> demonstrates the developed synchroniser.
+  <br />
+  <br />
+  <small>A Software Campus project with TU Darmstadt as academic partner and Siemens AG as industrial partner.</small>
+  <br />
+  <small>Jan 2013 - Dec 2013</small>
+  </li>
+  
+  <br/>
+
+   <li>
+  <h4><a href="http://www.crystal-artemis.eu">CRYSTAL - Critical System Engineering Acceleration</a></h4>
+  I worked on this research project during my time as a <a href="http://www.chalmers.se/en/staff/Pages/anjorin.aspx">post-doc at Chalmers (Gothenburg, Sweden)</a>.
+  Results of my work included an analysis of the potential and feasibility of transitioning from informal requirements to more formal models in the embedded industry 
+  (
+  <a href="http://tuprints.ulb.tu-darmstadt.de/4399/">
+  <i class="fa fa-file-text-o" aria-hidden="true"></i></a>
+  ).
+  <br />
+  <br />
+  <small>Jul 2015 – Mar 2016</small>
+  </li>
+  
+  <br />
+  
+  <li>
+  <h4><a href="http://www.amalthea-project.org">AMALTHEA4Public</a></h4>
+  I worked on this research project during my time as a <a href="http://www.chalmers.se/en/staff/Pages/anjorin.aspx">post-doc at Chalmers (Gothenburg, Sweden)</a>.
+  Results of my work included a survey and analysis of the current use, challenges, and potential of traceability management solutions in the industry  
+  (
+  <a href="http://ieeexplore.ieee.org/abstract/document/7582777/">
+  <i class="fa fa-file-text-o" aria-hidden="true"></i></a>,
+  <a href="http://ieeexplore.ieee.org/abstract/document/7765527/">
+  <i class="fa fa-file-text-o" aria-hidden="true"></i></a>
+  ).
+  I also helped initiate <a href="https://projects.eclipse.org/proposals/capra">Capra</a>, a flexible traceability management tool that is now being developed as an Eclipse project. 
+  <br />
+  <br />
+  <small>Jul 2015 – Mar 2016</small>
+  </li>
+</ul>
+  
+</p>
+
+<h3>Current Interests (things I'm working on at the moment)</h3>
+<p>
+<ul>
+<li>  
+I'm still very much interested in establishing a toolsuite for consistency management tasks based on TGGs as an underlying formalism.
+If you're interested in our progress and current challenges, checkout the current roadmap
+(
+<a href="https://journal.ub.tu-berlin.de/eceasst/article/view/1031">
+<i class="fa fa-file-text-o" aria-hidden="true"></i></a>
+)
+for this endeavour.
+</li>
+<br />
+
+<li>
+Inspired by recent advancements in the area of <i>incremental graph pattern matching</i>, I have started exploring the potential of using an incremental graph pattern matcher as an underlying engine for diverse consistency management tasks.
+This is currently joint work performed in close collaboration with my former office mates <a href="http://www.es.tu-darmstadt.de/es/team/erhan-leblebici/">Erhan Leblebici</a>, <a href="http://www.es.tu-darmstadt.de/es/team/gergely-varro/">Gergeley Varró</a>, and my doctor father <a href="http://www.es.tu-darmstadt.de/es/team/andy-schuerr/">Andy Schürr</a>.
+</li>
+<br />
+
+<li>
+Inspired by work in the research area of <i>method engineering</i> performed by my current colleagues in the research group of <a href="https://cs.uni-paderborn.de/dbis/personal/arbeitsgruppe/mitarbeiter/prof-gregor-engels/visitenkarte/">Gregor Engels</a>, I have started revisiting all my previous work and old projects on synchronisation scenarios and other consistency management applications.
+My goal is to apply method engineering as a promising means of extracting and packaging reusable knowledge and experience from these past projects in the form of reusable <i>method fragments</i> and <i>method patterns</i>.  
+</li>
+
+</ul>
+</p>
+
+<a href="#profile" class="btn btn-profile
+btn-xl page-scroll">My Profile</a>
+</div>
+</div>
+</div>
+
+</section>
+
+     <section id="profile" class="download bg-profile text-left">
+        <div class="container">
+            <div class="row">
+                 <div class="col-md-8 col-md-offset-2">
+                    <h3>Profile</h3>
+		  <p>
+		   <ul>
+		     <li>
+		     <h4>[ Personal ]</h4>
+		     <ul>
+		       <li>
+		       I was born on the first of November, 1984 in Zaria, Nigeria.
+		       </li>
+		       <li>
+		       I am both German and Nigerian by birth.
+		       </li>
+		       <li>
+		       I am married and currently have one child.
+		       </li>
+		     </ul>
+		     </li>
+		     <li>
+		     <h4>[ Work Experience ]</h4>
+		     <ul>
+		       <li>
+		       As from <b>April 2016</b> I have been a <b>junior professor</b> at Paderborn University, Germany.
+		       </li>
+		       <li>
+		       From <b>June 2015 to February 2016</b> I was a <b>post-doc</b> at Chalmers | University of Gothenburg, Sweden.
+		       </li>
+		       <li>
+		       From <b>May 2010 to May 2015</b> I was a <b>research associate and teaching assistant</b> at Technische Universität Darmstadt, Germany.
+		       </li>
+		       <li>
+		       From <b>October 2007 to March 2008</b> I was a <b>software developer</b> working at MAN-Nutzfahrzeuge AG, München, Germany.
+		       </li>
+		       <li>
+		       From <b>June 2007 to September 2007</b> I was a <b>software developer</b> working at REA-Elektronik GmbH, Darmstadt, Germany.
+		       </li>
+		       <li>
+		       From <b>December 2002 to September 2003</b> I did my <b>civil service (Zivildienst)</b> at the Evangelisches Hospital für palliative Medizin, Frankfurt (Main), Germany.
+		       </li>	  
+		     </ul>
+		     </li>
+		     <li>
+		     <h4>[ Education ]</h4>
+		     <ul>
+		       <li>
+		       <b>December 2014</b>, <a href="http://tuprints.ulb.tu-darmstadt.de/4399/7/thesis-final-submission-ulb.pdf">PhD thesis</a>, supervised by <a href="http://www.es.tu-darmstadt.de/es/team/andy-schuerr/">Andy Schürr</a> at Technische Universität Darmstadt, Germany, with title <i>Synchronisation of Models on Different Abstraction Levels using Triple Graph Grammars</i>, summa cum laude.
+		       </li>
+		       <li>
+		       From <b>April 2008 to April 2010</b> Master of Science, Computational Engineering, Technische Universität Darmstadt, Germany, Grade 1.0
+		       </li>
+		       <li>
+		       From <b>October 2003 to April 2007</b> Bachelor of Science, Computational Engineering, Technische Universität Darmstadt, Germany, Grade 1.7
+		       </li>
+		       <li>
+		       From <b>September 2001 to June 2002</b> Studienkolleg für ausländische Studierende, Mittel-Hessen, Germany, Feststellungsprüfung with Grade 1.0
+		       </li>
+		       <li>
+		       From <b>November 1994 to June 2000</b> King’s College Lagos, Nigeria, West African Senior School Certificate (WAEC).
+		       </li>
+		     </ul>
+		     </li>
+		   </ul>
+		  </p>
+		    <a href="#teaching" class="btn btn-outline
+		  btn-xl page-scroll">My Teaching Experience</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+	<section id="teaching" class="download bg-primary text-left">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+		  <h3>Teaching:  Experience and Material</h3>
+
+		  <p>
+		  I enjoy teaching and take great joy in preparing engaging slides and great learning material.
+		  Here is a brief overview of courses that I have prepared and held in the past.
+		  Please contact me directly if you would like to have access to material that I have not yet (or cannot) make freely available online.
+		  </p>
+		 
+		  <p>
+		   <ul>
+		     <li>
+		     <h4>[ An online bx demonstrator (demon-bx) ]</h4>
+
+		     Model synchronisation tools are cool and fun to play with.  Such tools are also a nice way of showcasing bidirectional transformation (bx) languages as they make you realise how rich the solution space is and how easily an inexperienced programmer could mess things up.
+		     To get students hooked on bx research and interested in the general area, a student of mine has recently built a fancy bx demonstrator called <i>demon-bx</i> (pronounced /demon-box/).  I have used this engaging tool as part of the exercise for a university course as well as for a Girls' Day workshop.  It is web-based (zero installation or setup) and is <a href="http://bxtransform.cs.upb.de:8080/Client/GUI.html">available</a> online.  
+		     </li>
+		     <br />
+		     <li>
+		     <h4>[ Fundamentals of Model-Driven Engineering (FMDE) ]</h4>
+		     
+		     I established and, starting from the winter semester of 2016/17, have been holding the lecture <a href="https://cs.uni-paderborn.de/dbis/lehre/veranstaltungen/ws-201617/fundamentals-of-model-driven-engineering/news/">Fundamentals of Model-Driven Engineering (FMDE)</a> at Paderborn University.  This lecture provides a uniform formalisation of the most important MDE concepts based on graph transformation and basic category theory.
+		     My motivation for preparing this lecture from scratch was to make the rich and mature theory accessible to computer science students (or anyone that can program).  <i>Every</i> single definition and proof in the lecture is programmed in Java 8, providing a constructive and hands-on handle to otherwise very abstract and generic theoretical concepts and results.
+		    Please contact me for the slides and exercises.
+		     You can freely access the <a href="https://github.com/anthonyanjorin/fmde">code</a> hosted on GitHub.
+		     I would be honoured if anyone might be interested in adapting the material and holding a similar lecture based on FMDE.
+		     </li>
+		     <br />
+		     <li>
+		     <h4>[ Software Quality Assurance (SQA) ]</h4>
+		     
+		     The primary motivation for research on model-based techniques and technology is often attaining a substantial increase in the <i>quality</i> of developed software systems.
+		     This implies that establishing a common understanding of what exactly <i>software quality</i> means is certainly a good idea. 
+		     It has thus been my pleasure to have held the lecture <a href="https://cs.uni-paderborn.de/dbis/lehre/veranstaltungen/ss-2017/software-quality-assurance/news/">Software Quality Assurance (SQA)</a> at Paderborn University in the summer semester of 2016 and of 2017.
+		     After holding this lecture twice, updating and improving all slides and exercises in the process (contact me for access), I have handed this lecture back to <a href="https://cs.uni-paderborn.de/dbis/personal/arbeitsgruppe/mitarbeiter/prof-gregor-engels/visitenkarte/">Gregor Engels</a>.  
+		     </li>
+		     <br />
+		     <li>
+		     <h4>[ An introductory C++ course for Java programmers ]</h4>
+		     
+		     C++ is a rich and complex programming language that combines multiple paradigms and programming styles.
+		     Although I wouldn't suggest learning C++ as a first programming language, it certainly is relevant in practice and remains <i>the</i> language of choice in some important domains.
+		     It also provides a modern interface to the vast wealth of efficient C libraries when you need this.
+		     
+		     During my PhD at the Technische Universität Darmstadt, I took over and completely reengineered the introductory C++ course being held there.
+		     This course is still being held and updated today, and you can freely access the <a href="https://github.com/Echtzeitsysteme/tud-cppp/blob/master/lecture/cppp_lecture.pdf">available material</a> on GitHub.
+		     </li>
+		   </ul>
+		  </p>
+		  <a href="#service" class="btn btn-profile
+		  btn-xl page-scroll">Service</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+   <section id="service" class="download bg-profile text-left">
+        <div class="container">
+            <div class="row">
+                 <div class="col-md-8 col-md-offset-2">
+                    
+		   <h3>Workshops, Conferences, Seminars, and Journals</h3>
+		   <p>
+		   <ul>
+		     <li>
+		     20th International Conference on Model Driven Engineering Languages and Systems (<a href="https://www.cs.utexas.edu/models2017/home">MoDELS 2017</a>)
+		     <br />
+		     <small>[ Programme committee member of the foundations track and of the posters track ]</small>
+		     </li>
+		     <br />
+		     <li>
+		     13th European Conference on Modelling Foundations and Applications (<a href="http://ecmfaconference.wixsite.com/ecmfa2017">ECMFA 2017</a>)
+		     <br />
+		     <small>[ Chair for the foundations track ]</small>
+		     </li>
+		     <br />
+		     <li>10th International Conference on Graph Transformation (<a href="https://sites.google.com/site/gratra2017/home">ICGT 2017</a>)
+		     <br />
+		     <small>[ Programme committee member ]</small>
+		     </li>
+		     <br />
+		     <li>
+		     6th International Workshop on Bidirectional Transformations (<a href="http://bx-community.wikidot.com/bx2017:home">BX 2017</a>)
+		     <br />
+		     <small>[ Programme committee member ]</small>
+		     </li>
+		     <br />
+		     <li>
+		     Fifth International Workshop on Bidirectional Transformations (<a href="http://bx-community.wikidot.com/bx2016:home">BX 2016</a>)
+		     <br />
+		     <small>[ Co-chair with Jeremy Gibbons ]</small>
+		     </li>
+		     <br />
+		     <li>
+		     <a href="http://bx-community.wikidot.com/bx-steering-committee">BX Steering Committee </a>
+		     <br />
+		     <small>[ Member since 2016; Chair since 2016]</small>
+		     </li>
+		     <br />
+		     <li>
+		     <a href="http://bx-community.wikidot.com/bx-advisory-board">BX Advisory Board</a>
+		     <br/>
+		     <small>[ Member since 2016] </small>
+		     </li>
+		     <br />
+		     <li>
+		     NII Shonan Meeting Seminar 091 (<a href="http://shonan.nii.ac.jp/seminar/091/">Bidirectional Transformations</a>)
+		     <br />
+		     <small>[ Co-organiser ]</small>
+		     </li>
+		     <br />
+		     <li>
+		     9th International Conference on Software Language Engineering (<a href="http://www.sleconf.org/2016/">SLE 2016</a>)
+		     <br />
+		     <small>[ Artefact reviewer ]</small>
+		     </li>
+		     <br />
+		     <li>
+		     <a href="https://www.journals.elsevier.com/journal-of-systems-and-software">Journal of Systems and Software</a>
+		     <br />
+		     <small>[ Reviewer in 2016 ]</small>
+		     </li>
+		     <br />
+		     <li>
+		     Journal of Software and Systems Modelling (<a href="http://www.sosym.org">SoSym </a>)
+		     <br />
+		     <small>[ Reviewer in 2016 ]</small>
+		     </li>
+		     <br />
+		    <li>
+		     4th International Workshop on Bidirectional Transformations (<a href="http://bx-community.wikidot.com/bx2015:home">BX 2015</a>)
+		     <br />
+		     <small>[ Programme committee member ]</small>
+		     </li>
+		     <br />
+		   </ul>  
+		   </p>
+
+		   <h3>Invited Talks and Lectures</h3>
+
+		   <p>
+		   <ul>
+		     <li>
+		     Summer School on Bidirectional Transformations (<a href="https://www.cs.ox.ac.uk/projects/tlcbx/ssbx/">SSBX</a>) held from 25th to 29th July, 2016 
+		     <br />
+		     <small>[ Lecturer ]</small>
+		     </li>
+		     <br />
+		     <li>
+		     24th International Workshop on Functional and (Constraint) Logic Programming (<a href="https://wflp2016.github.io">WFLP 2016</a>) 
+		     <br />
+		     <small>[ Invited Speaker ]</small>
+		     </li>
+		   </ul>
+		   </p>
+		   
+		   <h3>Miscellaneous (or just for fun)</h3>
+		    <p>
+		   <ul>
+		     <li>
+		    <a href="https://www.uni-paderborn.de/universitaet/fgi/girlsday/">Girls' Day 2017</a>
+		     <br />
+		     <small>[ I organised a lecture and workshop: "Programmieren mit Kästchen und Strichen – Einblick in das Informatikstudium" ]</small>
+		     <br />
+		     <br />
+		     <p>
+		     <img class="img-responsive img-rounded" src="img/girlsday_2017.jpg" alt="Girls' Day 2017, Paderborn University" width="460"><h6>Photograph courtesy of Paderborn University, Girls' Day 2017.</h6>
+		     </p>
+		     </li>
+		     <br />
+		     <li>
+		     <a href="https://www.uni-paderborn.de/universitaet/fgi/herbst-uni/">Herbst-Uni 2016</a> 
+		     <br />
+		     <small>[ I organised a lecture and workshop: "Programmieren mit Kästchen und Strichen" ]</small>
+		     <br />
+		     <br />
+		     <p>
+		     <img class="img-responsive img-rounded" src="img/herbstuni_2016.jpg" alt="Herbst-Uni 2016, Paderborn University" width="460"><h6>Photograph courtesy of Paderborn University, Herbst-Uni 2016.</h6>
+		     </p>
+		     </li>
+		   </ul>
+		   </p>
+		 </div>
+	    </div>
+        </div>
+    </section>
+
+
+    <section id="contact" class="contact bg-primary">
+	 <div class="container-fluid">
+            <div class="row">
+	    <div class="col-md-3 col-xs-6 text-center">
+	    <div class="service-box">
+	      <a href="http://www.emoflon.org">
+	      <img src="img/emoflon.png" alt="emoflon" style="width:128px;height:128px;">
+	      </a>
+	    </div>
+	    </div>
+
+	    <div class="col-md-3 col-xs-6 text-center">
+	    <div class="service-box">
+	      <a href="https://scholar.google.ca/citations?user=jTNl4QYAAAAJ&hl=en">
+	      <img src="img/googlescholar.png" alt="google scholar" style="width:128px;height:128px;">
+	      </a>
+	    </div>
+	    </div>
+
+	      <div class="col-md-3 col-xs-6 text-center">
+	    <div class="service-box">
+	      <a href="http://dblp2.uni-trier.de/pers/hd/a/Anjorin:Anthony">
+	      <img src="img/dblp.png" alt="dblp" style="width:128px;height:128px;">
+	      </a>
+	    </div>
+	    </div>
+
+	    <div class="col-md-3 col-xs-6 text-center">
+	    <div class="service-box">
+	      <a href="https://www.linkedin.com/in/anthony-anjorin-666b88111/">
+	      <img src="img/linkedin.png" alt="linkedin" style="width:128px;height:128px;">
+	      </a>
+	    </div>
+	    </div>
+
+		
+	    <div class="col-md-4 col-xs-6 text-center">
+	    <div class="service-box">
+	      <a href="http://www.researchgate.net/profile/Anthony_Anjorin">
+	      <img src="img/researchgate.png" alt="research gate" style="width:128px;height:128px;">
+	      </a>
+	    </div>
+	    </div>
+
+	    <div class="col-md-4 col-xs-6 text-center">
+	    <div class="service-box">
+	      <a href="https://www.mendeley.com/profiles/tony-anjorin/">
+	      <img src="img/mendeley.png" alt="mendeley" style="width:128px;height:128px;">
+	      </a>
+	    </div>
+	    </div>
+	    
+	    <div class="col-md-4 col-xs-6 text-center">
+	    <div class="service-box">
+	      <a href="https://www.xing.com/profile/Anthony_Anjorin">
+	      <img src="img/xing.png" alt="xing" style="width:128px;height:128px;">
+	      </a>
+	    </div>
+	    </div>				
+	    </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2017 Anthony Anjorin. All Rights Reserved. Built with GitHub Pages and Bootstrap</p>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="lib/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/new-age.min.js"></script>
+
+</body>
+
+</html>

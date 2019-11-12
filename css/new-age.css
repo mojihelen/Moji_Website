@@ -183,7 +183,7 @@ header .header-content .header-content-inner .list-badges img {
 }
 header .device-container {
   max-width: 400px;
-  margin-top: 1000px;
+  margin-top: 500px;
 }
 header .device-container .screen img {
   border-radius: 3px;
@@ -210,7 +210,7 @@ header .device-container .screen img {
   header .device-container {
     max-width: none;
     max-height: calc(0vh);
-    margin: 30px auto 0;
+    margin: 50px;
   }
 }
 @media (min-width: 992px) {

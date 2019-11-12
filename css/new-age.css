@@ -182,8 +182,8 @@ header .header-content .header-content-inner .list-badges img {
   margin-bottom: 25px;
 }
 header .device-container {
-  max-width: 400px;
-  margin-top: 500px;
+  max-width: 800px;
+  margin:0 auto 100px;
 }
 header .device-container .screen img {
   border-radius: 3px;
@@ -254,7 +254,7 @@ section.download .badges .badge-link img {
   }
 }
 section.features .section-heading {
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 section.features .section-heading h2 {
   margin-top: 0;
@@ -268,7 +268,7 @@ section.features .feature-item {
   margin: 0 auto;
 }
 section.features .device-container {
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 @media (min-width: 992px) {
   section.features .device-container {

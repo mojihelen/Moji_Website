@@ -195,7 +195,7 @@ header .device-container .screen img {
   header .header-content {
     text-align: left;
     padding: 0;
-    height: 100vh;
+    height: 90vh;
   }
   header .header-content .header-content-inner {
     max-width: none;
@@ -219,13 +219,13 @@ header .device-container .screen img {
   }
 }
 section {
-  padding: 0px 0;
+  padding: 30px 0;
 }
 section h2 {
   font-size: 50px;
 }
 section.download {
-  padding: 150px 0;
+  padding: 30px 0;
   position: relative;
 }
 section.download h2 {
@@ -234,7 +234,7 @@ section.download h2 {
 }
 section.download .badges .badge-link {
   display: block;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 section.download .badges .badge-link:last-child {
   margin-bottom: 0;

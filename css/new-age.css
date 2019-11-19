@@ -151,11 +151,11 @@ header {
   width: 100%;
   min-height: auto;
   overflow-y: hidden;
-  background: url("../img/bg-pattern.png"), #436897;
+  background: url("../img/bg-pattern.png"), #CC9966;
   /* fallback for old browsers */
-  background: url("../img/bg-pattern.png"), -webkit-linear-gradient(to left, #436897, #46896d);
+  background: url("../img/bg-pattern.png"), -webkit-linear-gradient(to left, #CC9966, #CC6666);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: url("../img/bg-pattern.png"), linear-gradient(to left, #436897, #46896d);
+  background: url("../img/bg-pattern.png"), linear-gradient(to left, #CC9966, #CC6666);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: white;
 }
@@ -393,10 +393,10 @@ footer ul li a.active {
   text-decoration: none;
 }
 .bg-primary {
-  background: #5e75bc;
+  background: #CC6666;
 }
 .bg-profile {
-  background: #46896d;
+  background: #CC9966;
   color: white
 }
 .text-primary {
@@ -416,8 +416,8 @@ footer ul li a.active {
 .btn-outline:active,
 .btn-outline.active {
   color: white;
-  background-color: #5e75bc;
-  border-color: #46896d;
+  background-color: #CC3366;
+  border-color: #CC6666;
 }
 .btn-profile {
   color: white;
@@ -429,8 +429,8 @@ footer ul li a.active {
 .btn-profile:active,
 .btn-profile.active {
   color: white;
-  background-color: #46896d;
-  border-color: #5e75bc;
+  background-color: #CC3366;
+  border-color: #CC6666;
 }
 
 .btn {
